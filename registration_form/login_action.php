@@ -14,12 +14,12 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                 $student=$result->fetch_assoc();
                 if($passwrod==$student['password'])
                 {
-                    header("LOCATION:student_dashboard.php");
+                    echo "login succefully";
 
                 }
                 else 
                     {
-                       header("LOCATION:login.php");
+                       echo "login un succefully";
                     }
             }
             else{
